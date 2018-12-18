@@ -9,9 +9,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     />
     <title>Chats</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="top-header">
       <div class="header__top">
         <div class="header__column">
           <i class="fa fa-paper-plane" aria-hidden="true"></i>
@@ -33,11 +34,25 @@
           <span class="header__text"> Edit</span>
         </div>
         <div class="header__column">
-          <span class="header__text"
-            >Chats <i class="fa fa-caret-down"></i
+          <span class="header__text">
+            Chat <i class="fa fa-caret-down"></i
           ></span>
         </div>
+        <div class="header__column"></div>
       </div>
+
+      <!--
+        div class="header__bottom">
+          <div class="header__column">
+            <span class="header__text"> Edit</span>
+          </div>
+          <div class="header__column">
+            <span class="header__text">
+              Chats <i class="fa fa-caret-down"></i>
+            </span>
+          </div>
+        </div>
+      -->
     </header>
     <main class="chats">
       <div class="search-bar">
@@ -46,30 +61,63 @@
       </div>
       <ul class="chats__list">
         <li class="chats__chat">
-          <a href="chat.html" class="">
+          <a href="chat.html">
             <div class="chat__content">
               <img src="images/jaeyong.png" alt="" />
+              <div class="chat__preview">
+                <h3 class="chat__user">Jaeyong</h3>
+                <span class="chat__last-message">Please, answer my call</span>
+              </div>
             </div>
-            <div class="chat__preview">
-              <h3 class="chat__user">Jaeyong</h3>
-              <span class="chat__last-message">Please, answer my call</span>
-            </div>
-            <span class="chat__date-time"> 15:55 </span>
+            <span class="chat__date-time"> 18:35 </span>
           </a>
         </li>
-        <li>
-          <a href="chat.html" class="">
+        <li class="chats__chat">
+          <a href="chat.html">
             <div class="chat__content">
               <img src="images/seolhyun.png" alt="" />
+              <div class="chat__preview">
+                <h3 class="chat__user">Seolhyun</h3>
+                <span class="chat__last-message">I broke up with ZICO</span>
+              </div>
             </div>
-            <div class="chat__preview">
-              <h3 class="chat__user">Seolhyun</h3>
-              <span class="chat__last-message">I'm sorry..</span>
-            </div>
-            <span class="chat__date-time"> 15:53 </span>
+            <span class="chat__date-time"> 18:35 </span>
           </a>
         </li>
       </ul>
+      <!--
+        main class="chats">
+          <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Find friends, chat, Plus Friends" />
+          </div>
+          <ul class="chats__list">
+            <li class="chats__chat">
+              <a href="chat.html" class="">
+                <div class="chat__content">
+                  <img src="images/jaeyong.png" alt="" />
+                </div>
+                <div class="chat__preview">
+                  <h3 class="chat__user">Jaeyong</h3>
+                  <span class="chat__last-message">Please, answer my call</span>
+                </div>
+                <span class="chat__date-time"> 15:55 </span>
+              </a>
+            </li>
+            <li>
+              <a href="chat.html" class="">
+                <div class="chat__content">
+                  <img src="images/seolhyun.png" alt="" />
+                </div>
+                <div class="chat__preview">
+                  <h3 class="chat__user">Seolhyun</h3>
+                  <span class="chat__last-message">I'm sorry..</span>
+                </div>
+                <span class="chat__date-time"> 15:53 </span>
+              </a>
+            </li>
+          </ul>
+      -->
       <div class="chat-btn"><i class="fa fa-comment"></i></div>
     </main>
     <nav class="tab-bar">

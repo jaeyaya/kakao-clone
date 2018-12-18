@@ -9,9 +9,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
     />
     <title>fine</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="top-header">
       <div class="header__top">
         <div class="header__column">
           <i class="fa fa-paper-plane" aria-hidden="true"></i>
@@ -35,6 +36,7 @@
         <div class="header__column">
           <span class="header__text">find </span>
         </div>
+        <div class="header__column"></div>
       </div>
     </header>
     <main class="find">
@@ -48,7 +50,7 @@
           <span class="find__option-title">QR Code</span>
         </div>
         <div class="find__option">
-          <i class="fa fa-mobile fa-2x"></i>
+          <i class="fa fa-mobile fa-lg"></i>
           <span class="find__option-title">Shake</span>
         </div>
         <div class="find__option">
@@ -58,7 +60,11 @@
       </section>
       <section class="find__recommended">
         <header><h6 class="recommended__title">Recommended Friends</h6></header>
-        <div class="recommended__text">You have no recommended friends.</div>
+        <div class="recommended__none">
+          <span class="recommended__text"
+            >You have no recommended friends.</span
+          >
+        </div>
       </section>
     </main>
     <nav class="tab-bar">
